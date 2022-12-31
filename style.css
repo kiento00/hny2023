@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+  }
+  .background {
+    position: relative;
+    background-image: linear-gradient(black, #26355E);
+    height: 100vh;
+ }
+
+
+.fireworks,
+.fireworks1,
+.fireworks2,
+.fireworks3,
+.fireworks4,
+.fireworks5 {
+position: absolute;
+    top: 30%;
+    left: 50%;
+    background-image: radial-gradient(red 30%,black),
+      radial-gradient(yellow,black),
+      radial-gradient(pink,black),
+      radial-gradient(#1DE000, black),
+      radial-gradient(rgb(153, 0, 255), black),
+      radial-gradient(rgb(255, 0, 149), black),
+      radial-gradient(rgb(255, 0, 170), black),
+      radial-gradient(rgb(0, 255, 170), black),
+      radial-gradient(rgb(153, 0, 255), black),
+      radial-gradient(rgb(255, 0, 149), black),
+      radial-gradient(rgb(0, 174, 255), black),
+      radial-gradient(rgb(0, 255, 170), black),
+      radial-gradient(rgb(153, 0, 255), black),
+      radial-gradient(rgb(0, 255, 170), black),
+      radial-gradient(rgb(153, 0, 255), black),
+      radial-gradient(rgb(255, 0, 149), black),
+      radial-gradient(rgb(200, 255, 0), black),
+      radial-gradient(rgb(0, 255, 170), black),
+      radial-gradient(rgb(0, 140, 255), black),
+      radial-gradient(rgb(255, 217, 0), black),
+      radial-gradient(rgb(0, 140, 255), black), 
+      radial-gradient(rgb(166, 255, 0), black),
+      radial-gradient(rgb(166, 255, 0), black),
+      radial-gradient(rgb(255, 0, 149), black),
+       radial-gradient(yellow,black),
+      radial-gradient(pink,black),
+      radial-gradient(#1DE000, black);
+    background-position: 95% 30%, 50% 0%, 100% 10%, 20% 10%, 50% 50%, 30% 30%,
+      0% 50%, 80% 25%, 50% 30%, 80% 50%, 100% 60%, 80% 80%, 20% 85%, 0 25%,
+      55% 65%, 85% 0, 50% 100%, 70% 90%, 10% 70%, 70% 70%, 30% 70%, 20% 40%, 0% 100%,40% 80%,20% 80%,
+      40% 90%, 90% 90%;
+    width: 5px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
+   animation: fireworks 2s infinite;
+    z-index: 3;
+}
+
+.fireworks1{
+top:50%;
+left:30%;
+animation-delay:0.5s;
+}
+.fireworks2{
+top:20%;
+left:60%;
+animation-delay:0.75s;
+}
+.fireworks3{
+top:40%;
+left:70%;
+animation-delay:1s;
+}
+.fireworks4{
+top:10%;
+left:80%;
+animation-delay:1.25s;
+}
+.fireworks5{
+top:60%;
+left:50%;
+animation-delay:1.5s;
+}
+@keyframes fireworks{
+0%{
+  transform: translateY(85vh);
+}
+50%{
+  width:5px;
+  height:10px;
+  opacity:2;
+  
+}
+75%{
+    width:5px;
+  height:5px;
+  opacity:2
+}
+100%
+{
+  width:200px;
+  height:200px;
+  opacity:0;
+}
+}
+
+p {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+letter-spacing: 0.2cm;
+text-align: center;
+color: yellow;
+font-size: 2rem;
+font-family: Lucida Sans;
+animation: words  1s infinite;
+}
+@keyframes words{
+0%{
+  color:red;
+}
+50%{
+  color:pink;
+}
+100%{
+  color:cyan;
+}
+}
